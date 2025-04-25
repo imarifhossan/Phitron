@@ -4,6 +4,8 @@ int main()
     char s[10];
     scanf("%s",s);
     printf("%s",s);
+    printf("%c",s[5]);//get nul value
+    printf("%d",s[5]);//get nul ASCI character integer value
     return 0;
 }
 
