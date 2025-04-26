@@ -7,6 +7,7 @@ int main()
     int i = 0;
     // compare with built in
     int val= strcmp(a,b);
+    printf("%d",val);
     if(val<0){
         printf("A is smaller");
     }
