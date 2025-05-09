@@ -5,7 +5,7 @@ char capital_to_small (char a){
 }
 int main (){
     char x;
-    scanf("%c",x);
+    scanf("%c",&x);
     char result = capital_to_small(x);
     printf("%c",result);
 }
