@@ -18,3 +18,38 @@ int main(){
     }
     return 0;
 }
+/*
+#include <stdio.h>
+
+int main() {
+    int rows;
+    scanf("%d", &rows);
+
+    for (int i = 0; i < rows; i++) {
+        int spaces = i;
+        int stars = 2 * (rows - i) - 1;
+
+        // Print spaces
+        for (int s = 0; s < spaces; s++) {
+            printf(" ");
+        }
+
+        // Print stars
+        for (int a = 0; a < stars; a++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+*/
+
+/*
+ *********
+  *******
+   *****
+    ***
+     *
+*/
