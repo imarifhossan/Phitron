@@ -43,8 +43,15 @@ int main (){
 int main (){
   int a[4]={1,2,3,4};
   int *p;
+  printf("p==> %p\n",p);
+  printf("a==> %p\n",a);
+  printf("a[0]==> %p\n",&a[0]);
+  printf("a[1]==> %p\n",&a[1]);
+  printf("a[2]==> %p\n",&a[2]);
+  printf("a[3]==> %p\n",&a[3]);
   p=a+3;
+  printf("new p==> %p\n",p);
   *p=5;
-  printf("%d ",a[3]);//5
+  printf("%d \n",a[3]);//5
 
 }
