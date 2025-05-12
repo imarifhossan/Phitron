@@ -38,6 +38,7 @@ int main (){
 }
 */
 
+/*
 #include <stdio.h>
 
 int main (){
@@ -54,4 +55,31 @@ int main (){
   *p=5;
   printf("%d \n",a[3]);//5
 
+}
+
+
+*/
+
+#include <stdio.h>
+int* fun(int a[],int n)
+{
+    a[2]=200;
+    return a;
+}
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        scanf("%d", &a[i]);
+    }
+    printf("%p\n", a);//6421984
+    printf("%p\n", &a[0]);//6421984
+    int* result = fun(a,n);
+    // for(int i=0;i<n;i++){
+    //     printf("%d ", result[i]);
+    // }
+    printf("%p", &result[2]);//6421984
+    
 }
