@@ -5,7 +5,7 @@ void ascending (int* a, int *b,int n){
         b[i]=a[i];
     }
      for(int i=0;i<2;i++){
-        for(int j=i+1;j<=3;j++){
+        for(int j=i+1;j<=2;j++){
             if(a[i]>a[j]){
                 int temp = a[i];
                 a[i]=a[j];
