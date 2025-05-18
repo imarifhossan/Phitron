@@ -21,8 +21,8 @@ int main (){
     return 0;
 }
 
-
 /*
+
 #include <stdio.h>
 void printReverseArray(int a[], int i){
     if(i<0){
