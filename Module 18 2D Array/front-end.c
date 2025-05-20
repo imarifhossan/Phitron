@@ -11,7 +11,7 @@ int main()
 
     int i = 0, j = n - 1;
 
-    while (i <=j)
+    while (i <= j)
     {
         if (i == j)
         {
@@ -27,3 +27,4 @@ int main()
     }
         return 0;
 }
+
