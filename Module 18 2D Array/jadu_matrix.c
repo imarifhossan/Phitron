@@ -12,45 +12,41 @@ int main()
             scanf("%d", &a[i][j]);
         }
     }
-    bool is_diagonal = true;
-
+    int is_Jadu = 1;
     if (r == c)
     {
-
         for (int i = 0; i < r; i++)
         {
-            for (int j = 0; j < c; j++)
+            for (int j = 0; j < r; j++)
             {
-                if (i == j)
+                if (i == j  || i + j == r - 1)
                 {
-                    // diagonal position
+                    // diagoinal position
+                    if(a[i][j]!=1){
+                        is_Jadu=0;
+                    }
                 }
                 else
                 {
                     if (a[i][j] != 0)
                     {
-                        is_diagonal=false;
-                        printf("This is not a primary diagonal matrix");
+                        is_Jadu = 0;
+                     
                     }
                 }
             }
         }
-     if(is_diagonal==true){
-            printf("This is a diagonal matrix");
-    }
+        if(is_Jadu==1){
+            printf("YES");
+        }
+        else  {
+            printf("NO");
+        }
+
     }
     else
     {
-        printf("Its not a diagonal matrix");
+        printf("NO");
     }
-
     return 0;
 }
-
-// Example of primary diagonal matrix
-/*
-3 3
-5 0 0
-0 6 0
-0 0 1
-*/
