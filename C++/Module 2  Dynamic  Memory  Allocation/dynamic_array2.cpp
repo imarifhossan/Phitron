@@ -6,6 +6,7 @@ int* get_array(int n){
     for(int i=0;i<n;i++){
         cin >> a[i];
     }
+    cout << a<< endl;
     return a;
 }
 int main ()
@@ -13,9 +14,10 @@ int main ()
     int n;
     cin >> n;
     int* result= get_array(n);
-    cout << result[0];
-    // for(int i=0;i<n;i++){
-    //     cout << result[i]<< " ";
-    // }
+    //accessing the address of result array postion 2 
+    // cout << (result+2);
+    for(int i=0;i<n;i++){
+        cout << result[i]<< " ";
+    }
     return 0;
 }
