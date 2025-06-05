@@ -8,12 +8,24 @@ public:
     int marks;
 };
 bool cmp(Student l,Student r){
+   /*
     if(l.marks < r.marks){
+        return true; //whatever order we want 
+    }
+    else {
+        return false;
+    }
+   */
+  return l.marks <r.marks;
+  /*
+  //descending
+    if(l.marks > r.marks){
         return true;
     }
     else {
         return false;
     }
+   */
 
 }
 int main()
@@ -33,3 +45,5 @@ int main()
    
     return 0;
 }
+
+
