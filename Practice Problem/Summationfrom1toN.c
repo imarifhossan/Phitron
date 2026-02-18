@@ -2,10 +2,10 @@
 int main (){
     int x;
     scanf("%d",&x);
-    int sum=0;
+    long long int sum=0;
     for(int i=1;i<=x;i++){
        sum+=i;
     }
-    printf("%d",sum);
+    printf("%lld",sum);
     return 0;
 }
